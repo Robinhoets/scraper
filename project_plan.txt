@@ -1,0 +1,8 @@
+# this document is to plan out the project
+
+
+Goal: to build a web scraper in python.
+
+implement agile development process
+start small and get bigger
+
