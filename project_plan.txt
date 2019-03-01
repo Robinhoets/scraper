@@ -8,9 +8,11 @@ start small and get bigger
 
 --- version 1 ---
 Connect to a website.
-	need to write def to connect
-	need to write def for simple_get
-Print to terminal connection successful.
+	need to write def to connect		check
+	need to write def for simple_get	check
+	need to write def for is_good_response	check
+	def for print_errors			check
+Print to terminal connection successful.	check
 Gather all main headings in data structure.
 Print headings to the terminal.
 
