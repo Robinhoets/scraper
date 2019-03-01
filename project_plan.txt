@@ -6,3 +6,9 @@ Goal: to build a web scraper in python.
 implement agile development process
 start small and get bigger
 
+--- version 1 ---
+Connect to a website.
+Print to terminal connection successful.
+Gather all main headings in data structure.
+Print headings to the terminal.
+
