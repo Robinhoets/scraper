@@ -8,6 +8,8 @@ start small and get bigger
 
 --- version 1 ---
 Connect to a website.
+	need to write def to connect
+	need to write def for simple_get
 Print to terminal connection successful.
 Gather all main headings in data structure.
 Print headings to the terminal.
