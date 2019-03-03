@@ -2,6 +2,7 @@
 
 
 #--- IMPORTS ---
+
 from requests import get
 from requests.exceptions import RequestException
 from contextlib import closing
@@ -19,7 +20,7 @@ def connect():
 	url = 'http://www.google.com'
 	response = get_url(url)
 	if response is not None:
-		return True
+		return True	#.......change this to return list........
 	
 	return False
 
@@ -57,7 +58,12 @@ def print_error(e):
 	"""
 	print(e)
 
+get_heading():
+	"""
 
+	"""
+
+	
 #--- MAIN METHOD ---
 
 if __name__=='__main__':
@@ -66,7 +72,19 @@ if __name__=='__main__':
 	is_connected = connect()
 	print('is connected: ' +str(is_connected))
 
-	
+	if(is_connected)
+		get_heading()
+	else:
+		print("Not connected... Exiting...)
+
+
+
+
+
+
+
+
+
 
 
 
