@@ -7,10 +7,10 @@ from bs4 import BeautifulSoup
 
 
 def connect():
-"""
-takes no arguments.
-returns boolean value of whether attempt to get url was successful.
-"""
+	"""
+	takes no arguments.
+	returns boolean value of whether attempt to get url was successful.
+	"""
 	url = 'http://www.google.com'
 	response = get_url(url)
 	if response is not None:
@@ -19,10 +19,10 @@ returns boolean value of whether attempt to get url was successful.
 	return False
 
 def get_url(url):
-"""
-takes http url as argument.
-returns content of response from def is_good_response.
-"""
+	"""
+	takes http url as argument.
+	returns content of response from def is_good_response.
+	"""
 	try:
 		with closing(get(url, stream=True)) as response:
 			if is_good_response(response):
@@ -35,25 +35,27 @@ returns content of response from def is_good_response.
 		return None
 
 def is_good_response(resp):
-    """
-takes url stream as argument.
-Returns True if the response seems to be HTML, False otherwise.
-    """
-    content_type = resp.headers['Content-Type'].lower()
-    return (resp.status_code == 200 
-            and content_type is not None 
-            and content_type.find('html') > -1)
+	"""
+	takes url stream as argument.
+	Returns True if the response seems to be HTML, False otherwise.
+  	"""
+	content_type = resp.headers['Content-Type'].lower()
+	return (resp.status_code == 200 
+		and content_type is not None 
+		and content_type.find('html') > -1)
 
 
 def print_error(e):
-"""
-takes in request exception as argument.
-prints exception message to terminal.
-"""
-    print(e)
+	"""
+	takes in request exception as argument.
+	prints exception message to terminal.
+	"""
+	print(e)
 
 if __name__=='__main__':
 	print('Connecting to the website')
 	
 	is_connected = connect()
 	print('is connected: ' +str(is_connected))
+
+
