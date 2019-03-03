@@ -13,6 +13,7 @@ Connect to a website.
 	need to write def for is_good_response	check
 	def for print_errors			check
 Print to terminal connection successful.	check
+Add comments.
 Gather all main headings in data structure.
 Print headings to the terminal.
 
