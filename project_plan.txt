@@ -14,6 +14,7 @@ Connect to a website.
 	def for print_errors			check
 Print to terminal connection successful.	check
 Add comments.					check
-Gather all main headings in data structure.
+Need to change methods to return
+Gather all main headings in data structure.	
 Print headings to the terminal.
 
