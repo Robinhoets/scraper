@@ -7,6 +7,10 @@ from bs4 import BeautifulSoup
 
 
 def connect():
+"""
+takes no arguments.
+returns boolean value of whether attempt to get url was successful.
+"""
 	url = 'http://www.google.com'
 	response = get_url(url)
 	if response is not None:
@@ -15,6 +19,10 @@ def connect():
 	return False
 
 def get_url(url):
+"""
+takes http url as argument.
+returns content of response from def is_good_response.
+"""
 	try:
 		with closing(get(url, stream=True)) as response:
 			if is_good_response(response):
@@ -28,7 +36,8 @@ def get_url(url):
 
 def is_good_response(resp):
     """
-    Returns True if the response seems to be HTML, False otherwise.
+takes url stream as argument.
+Returns True if the response seems to be HTML, False otherwise.
     """
     content_type = resp.headers['Content-Type'].lower()
     return (resp.status_code == 200 
@@ -37,6 +46,10 @@ def is_good_response(resp):
 
 
 def print_error(e):
+"""
+takes in request exception as argument.
+prints exception message to terminal.
+"""
     print(e)
 
 if __name__=='__main__':
