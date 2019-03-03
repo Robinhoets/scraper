@@ -1,10 +1,15 @@
 # main file for scraping a website
 
+
+#--- IMPORTS ---
 from requests import get
 from requests.exceptions import RequestException
 from contextlib import closing
 from bs4 import BeautifulSoup
 
+
+
+#--- DEFINITIONS ---
 
 def connect():
 	"""
@@ -52,10 +57,16 @@ def print_error(e):
 	"""
 	print(e)
 
+
+#--- MAIN METHOD ---
+
 if __name__=='__main__':
 	print('Connecting to the website')
 	
 	is_connected = connect()
 	print('is connected: ' +str(is_connected))
+
+	
+
 
 
