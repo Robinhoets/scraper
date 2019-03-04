@@ -20,9 +20,15 @@ def connect():
 	url = 'http://www.google.com'
 	response = get_url(url)
 	if response is not None:
-		return True	#.......change this to return list........
+		soup = BeautifulSoup(response, 'html.parser')
+		headings = set()
+		for h1 in soup.select('h1'):
+			for heading in h1.text.split('\n'):
+				if len(heading) > 0:
+					headings.add(heading.strip())
+		return list(headings)
 	
-	return False
+	raise Exception('Error: cannot retrieve contents at {}'.format(url))
 
 def get_url(url):
 	"""
@@ -58,11 +64,6 @@ def print_error(e):
 	"""
 	print(e)
 
-get_heading():
-	"""
-
-	"""
-
 	
 #--- MAIN METHOD ---
 
@@ -70,13 +71,11 @@ if __name__=='__main__':
 	print('Connecting to the website')
 	
 	is_connected = connect()
-	print('is connected: ' +str(is_connected))
+	print('is connected: ')
 
-	if(is_connected)
-		get_heading()
-	else:
-		print("Not connected... Exiting...)
+	
 
+	
 
 
 
