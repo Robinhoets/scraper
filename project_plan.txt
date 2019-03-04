@@ -15,8 +15,8 @@ Connect to a website.
 Print to terminal connection successful.	check
 Add comments.					check
 Need to change methods to return list.		check
-create get headings method to modularize
-	methods.
+create get_headings def to modularize
+	defs.					check
 Gather all main headings in data structure.	
 Print headings to the terminal.
 
