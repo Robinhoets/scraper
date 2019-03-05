@@ -20,8 +20,10 @@ create get_headings def to modularize
 Gather all main headings in data structure.	check
 Print headings to the terminal.			check
 
+  -- 1.1 --
+Print in a more readable format.		check
+
 --- Next implementations ---
-Print in a more readable format.
 Accept user input.
 Gather different headings.
 Search for keywords.
