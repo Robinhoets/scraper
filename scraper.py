@@ -17,7 +17,7 @@ def connect():
 	takes no arguments.
 	returns boolean value of whether attempt to get url was successful.
 	"""
-	url = 'http://www.basicwebsiteexample.com'
+	url = 'http://www. .com''
 	response = get_url(url)
 	if response is not None:
 		headings = get_headings(response)
