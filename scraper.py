@@ -17,7 +17,7 @@ def connect():
 	takes no arguments.
 	returns boolean value of whether attempt to get url was successful.
 	"""
-	url = 'http://www.google.com'
+	url = 'http://www.basicwebsiteexample.com'
 	response = get_url(url)
 	if response is not None:
 		headings = get_headings(response)
@@ -66,11 +66,22 @@ def get_headings(response):
 	"""
 	soup = BeautifulSoup(response, 'html.parser')
 	headings = set()
-	for h1 in soup.select('h1'):
-		for heading in h1.text.split('\n'):
+	for p in soup.select('p'):
+		for heading in p.text.split('\n'):
 			if len(heading) > 0:
 				headings.add(heading.strip())
 	return list(headings)
+
+def print_ps(heading_list):
+	"""
+	takes in a list of headings collected.
+	prints list to screen.
+	"""
+	for x in range(len(heading_list)):
+		y=x+1
+		print("Paragraph %d:   " %y + heading_list[x] + "\n")
+
+
 
 
 #--- MAIN METHOD ---
@@ -78,11 +89,10 @@ def get_headings(response):
 if __name__=='__main__':
 	print('Connecting to the website')
 	
-	is_connected = connect()
-	print('is connected: ')
-
+	heading_list = connect()
+	print('is connected...')
 	
-
+	print_ps(heading_list)
 	
 
 
