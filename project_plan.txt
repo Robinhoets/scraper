@@ -17,6 +17,13 @@ Add comments.					check
 Need to change methods to return list.		check
 create get_headings def to modularize
 	defs.					check
-Gather all main headings in data structure.	
-Print headings to the terminal.
+Gather all main headings in data structure.	check
+Print headings to the terminal.			check
 
+--- Next implementations ---
+Print in a more readable format.
+Accept user input.
+Gather different headings.
+Search for keywords.
+
+----------------------------
