@@ -12,12 +12,12 @@ from bs4 import BeautifulSoup
 
 #--- DEFINITIONS ---
 
-def connect(url):
+def connect(user_url):
 	"""
 	takes no arguments.
 	returns boolean value of whether attempt to get url was successful.
 	"""
-	url = 'http://www. .com''
+	url = user_url
 	response = get_url(url)
 	if response is not None:
 		headings = get_headings(response)
@@ -88,7 +88,7 @@ def print_ps(heading_list):
 
 if __name__=='__main__':
 	
-	url = raw_input("Enter a web address: ")
+	url = input("Enter a web address: ")
 	print('Connecting to the website')
 	
 	heading_list = connect(url)
