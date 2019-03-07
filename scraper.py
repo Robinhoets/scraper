@@ -12,7 +12,7 @@ from bs4 import BeautifulSoup
 
 #--- DEFINITIONS ---
 
-def connect():
+def connect(url):
 	"""
 	takes no arguments.
 	returns boolean value of whether attempt to get url was successful.
@@ -87,9 +87,11 @@ def print_ps(heading_list):
 #--- MAIN METHOD ---
 
 if __name__=='__main__':
+	
+	url = raw_input("Enter a web address: ")
 	print('Connecting to the website')
 	
-	heading_list = connect()
+	heading_list = connect(url)
 	print('is connected...')
 	
 	print_ps(heading_list)
