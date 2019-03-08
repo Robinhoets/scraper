@@ -26,6 +26,8 @@ Print in a more readable format.		check
 --- Next implementations ---
 Accept user input.				check
 Make Robot class.
+	The class should connect to website,
+	and return true if we can connect.
 Gather different headings.
 Search for keywords.
 Return a file of information requested.
