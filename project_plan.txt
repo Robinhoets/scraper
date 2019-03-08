@@ -24,14 +24,16 @@ Print headings to the terminal.			check
 Print in a more readable format.		check
 
 --- Next implementations ---
-Accept user input.
+Accept user input.				check
+Make Robot class.
 Gather different headings.
 Search for keywords.
-
+Return a file of information requested.
 ----------------------------
 
 --- Robot standards ---
 Add feature to check robots.txt and sitemaps.
+	python has a class robotparser
 ----------------------------
 
 --- Potential for classes ---
