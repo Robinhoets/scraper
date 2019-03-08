@@ -29,3 +29,12 @@ Gather different headings.
 Search for keywords.
 
 ----------------------------
+
+--- Robot standards ---
+Add feature to check robots.txt and sitemaps.
+----------------------------
+
+--- Potential for classes ---
+A class may be an item for a search.
+A class may be a retrieved document.
+
